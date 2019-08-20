@@ -14,7 +14,7 @@ public class SliceTailSnakeAttackSystem : SnakeAttackSystem {
 		if (snake2 == null) {
 			return;
 		}
-		if (item1.Position == item2.Position) {
+		if (item1.Position.ConvertToInt() == item2.Position.ConvertToInt()) {
 			snake1?.Destroy();
 			snake2?.Destroy();
 		} else {
